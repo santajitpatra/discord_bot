@@ -1,8 +1,9 @@
+require("dotenv").config();
 import { REST, Routes } from "discord.js";
-const CLIENT_ID = "1127162860389285908";
-const TOKEN =
-  "MTEyNzE2Mjg2MDM4OTI4NTkwOA.GAhCig.UyGhAD3UjNFozyqDGGsOt1qwUqfvmXkO1_6wBM";
+import process from "process";
 
+const CLIENT_ID = process.env.CLIENT_ID;
+const TOKEN = process.env.TOKEN;
 
 const commands = [
   {
